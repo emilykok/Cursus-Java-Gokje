@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a7f4672-3061-447a-80fb-b206c09e1271" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gokje.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gokje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gokje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gokje.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,8 @@
       <updated>1653941198308</updated>
       <workItem from="1653941204514" duration="59000" />
       <workItem from="1653941276403" duration="182000" />
-      <workItem from="1653941469542" duration="1825000" />
+      <workItem from="1653941469542" duration="1968000" />
+      <workItem from="1654008868049" duration="9773000" />
     </task>
     <servers />
   </component>
