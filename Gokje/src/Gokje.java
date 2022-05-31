@@ -1,13 +1,8 @@
-// Program should pick random number (defined in config variable)
-// The player should guess the number
-// The player should be able to guess a limited amount of times (defined in config variable)
-// The program should tell the player if the guess is too high or too low
-
 import java.io.*;
 
 public class Gokje {
     public static void main(String[] args) {
-        // Config variables
+        // Config variables - May be changed
         int lowerLimit = 1;
         int upperLimit = 100;
         int maxGuesses = 5;
@@ -68,6 +63,7 @@ public class Gokje {
                     break;
 
                 case "3":
+                    // Quit
                     System.out.println("\nYou chose to quit!");
                     running = false;
                     break;
@@ -116,8 +112,9 @@ public class Gokje {
             try {
                 userGuess = Integer.parseInt(reader.readLine());
             }
-            catch (IOException e) {
-                throw new RuntimeException(e);
+            catch (Exception e) {
+                System.out.println("Invalid input, you know what a number is right?. Ending game");
+                return;
             }
             if (userGuess < lowerLimit || userGuess > upperLimit) {
                 System.out.println("The number you chose is not between " + lowerLimit + " and " + upperLimit);
@@ -153,8 +150,9 @@ public class Gokje {
         int lowerPcLimit;
         try {
             lowerPcLimit = Integer.parseInt(reader.readLine());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
+            System.out.println("Invalid input, you know what a number is right?. Ending game");
+            return;
         }
 
         // While loop to check if upperlimit is higher than lowerlimit
@@ -164,8 +162,9 @@ public class Gokje {
             System.out.println("\nUpperlimit: ");
             try {
                 upperPcLimit = Integer.parseInt(reader.readLine());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            } catch (Exception e) {
+                System.out.println("Invalid input, you know what a number is right?. Ending game");
+                return;
             }
             if (upperPcLimit <= lowerPcLimit) {
                 System.out.println("Upperlimit must be higher than lowerlimit");
@@ -183,8 +182,9 @@ public class Gokje {
             try {
                 randomUserNumber = Integer.parseInt(reader.readLine());
             }
-            catch (IOException e) {
-                throw new RuntimeException(e);
+            catch (Exception e) {
+                System.out.println("Invalid input, you know what a number is right?. Ending game");
+                return;
             }
             if (randomUserNumber < lowerPcLimit || randomUserNumber > upperPcLimit) {
                 System.out.println("The number you chose is not between " + lowerPcLimit + " and " + upperPcLimit);
