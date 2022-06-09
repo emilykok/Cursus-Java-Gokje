@@ -1,4 +1,8 @@
+// EMILY KOK - 1007695
+
 import java.io.*;
+
+import static java.lang.System.exit;
 
 public class Gokje {
     public static void main(String[] args) {
@@ -6,6 +10,10 @@ public class Gokje {
         int lowerLimit = 1;
         int upperLimit = 100;
         int maxGuesses = 5;
+
+        if (lowerLimit > upperLimit || maxGuesses == 0)
+            System.out.println("Warning: Config variables incorrect");
+            exit(1);
 
         // run the game main-screen
         boolean running = true;
